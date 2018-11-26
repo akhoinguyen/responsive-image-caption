@@ -21,18 +21,50 @@ body {
   margin: 0;
 }
 
-img {
+.img-flex {
   display: block;
   width: 100%;
 }
 
 .cap {
   background-color: #e2e2e2;
-  width: 100%;
   padding: 1rem;
 }
 
 .cap h2 {
+  font-size: 1.5rem;
   margin: 0 0 1.3rem;
   font-family: "Denk One", sans-serif;
+}
+
+section {
+  position: relative;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .cap {
+    display: block;
+    max-width: 20em;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 }
